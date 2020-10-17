@@ -31,6 +31,8 @@ p{
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: #8581FF;
+  /* top: 40px !important; */
 }
 
 .navbar-custom .navbar-brand {
@@ -49,6 +51,22 @@ p{
 
 #signUPBtn{
   background-color: #FFEEBB;
+  padding: 10px 15px;
+}
+
+.banner{
+  width: 100%;
+  height: 40px;
+  background-color: #8581FF !important;
+  position: sticky;
+  top: 80px !important;
+  overflow: hidden;
+}
+
+.banner a{
+  text-align: center;
+  color: #bd0760;
+  font-size: 14px;
 }
 
 /* Hero */
@@ -75,6 +93,8 @@ header.masthead {
 
 .homeHeroTxt{
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .heroContainer{
