@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  color: #ffffff;
-  background-color: #0C0C0C;
+  color: #ffffff !important;
+  background-color: #0C0C0C !important;
 }
 
 h1,
@@ -20,7 +20,10 @@ h6 {
   font-weight: 800 !important;
 }
 
-
+p{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #ffffff;
+}
 
 /* Nav */
 
