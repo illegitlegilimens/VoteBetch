@@ -92,18 +92,10 @@ p{
 
 /* Hero */
 
-.btn-xl {
-  text-transform: uppercase;
-  padding: 1.5rem 3rem;
-  font-size: 1em;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-}
-
 .masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 20px);
+  padding-top: 200px;
   padding-bottom: 7rem;
   background: #0C0C0C;  
   top: 0px;
