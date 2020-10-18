@@ -23,6 +23,7 @@ h5{
 h6{
   font-family: 'Nunito Sans', sans-serif;
   color: #8581FF;
+  font-size: 20px;
 }
 
 p{
@@ -30,6 +31,7 @@ p{
   color: #ffffff;
   font-weight: 400;
   font-size: 25px;
+  padding: 0 !important;
 }
 
 .floatRight{
@@ -157,10 +159,19 @@ p{
   margin: 10px 50px 200px 0px;
 }
 
-.card-title h1{
+.card-img-top{
+  padding-bottom: 40px;
+}
+
+.card-title {
   color: #ffffff;
-  text-decoration: underline;
-  
+  text-decoration: underline !important;
+  font-size: 20px;
+}
+
+.card-text{
+  font-size: 18px;
+  font-weight: 200;
 }
 
 /* Footer */
