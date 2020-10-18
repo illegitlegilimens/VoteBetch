@@ -156,7 +156,7 @@ p{
 .card{
   width: 200px;
   background-color: transparent;
-  margin: 10px 50px 200px 0px;
+  margin: 10px 25px 200px 25px;
 }
 
 .card-img-top{
@@ -172,6 +172,10 @@ p{
 .card-text{
   font-size: 18px;
   font-weight: 200;
+}
+
+.arrow{
+  padding-top: 150px;
 }
 
 /* Footer */
