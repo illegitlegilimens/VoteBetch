@@ -6,10 +6,10 @@
 * Ginalore 
 * Cherie Allen
 ### Tools Used
-* add
-* your
-* list
-* here
+* VS Code, Github
+* Figma
+* Google Suite
+* 
 ## Overview
 your description of the project
 ## GitHub Website

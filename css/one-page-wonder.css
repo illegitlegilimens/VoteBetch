@@ -268,6 +268,7 @@ p{
   border-radius: 20px;
   width: 40%;
   margin-right: 30px;
+  line-height: 0;
 }
 
 .candiDesc{
@@ -342,7 +343,7 @@ p{
   justify-content: center;
 }
 
-.voteBox{
+.voteBox p{
   color: #E0E0E0;
   font-weight: 200px;
   font-size: 20px;
