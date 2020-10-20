@@ -10,6 +10,11 @@
   background-color: #050505 !important;
 }
 
+.content{
+  overflow: hidden;
+  height: 100%;
+}
+
 p{
   margin: 0;
 }
@@ -282,18 +287,22 @@ p{
   width: 100%;
 }
 
-h5{
-  font-size: 20px;
+.customAccordian .panel-title{
+  margin: 10px 0px;
+}
+
+.customAccordian a{
+  font-size: 18px;
   color: #E0E0E0;
 }
 
-.dropArrow{
+/* .dropArrow{
   transition: 0.5s;
 }
 
 .flip{
-  transform: rotate(180deg);
-}
+  transform: rotate(-180deg);
+} */
 
 .candiTopVote{
   width: 100%;
