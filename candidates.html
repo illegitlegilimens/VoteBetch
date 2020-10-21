@@ -25,28 +25,31 @@
 
 <!-- Navigation -->
 
-<div class="container d-flex align-items-stretch">
-    <nav id="sidebar">
-        <div class="p-4">
-            <a href="index.html"><img src="img/VBLogo.svg" style="margin: 20px 50px 30px 0px;"></a>
-    <ul class="list-unstyled components mb-5">
-      <li class="sideNavBtn active">
-        <a href="#">Candidates</a>
-      </li>
-      <li class="sideNavBtn">
-          <a href="#">Measures</a>
-      </li>
-      <li class="sideNavBtn">
-      <a href="#">Quizzes</a>
-      </li>
-    </ul>
-    <img src="img/voterconfidence.png" width="100%">
-  </div>
-</nav>
+<div class="container fullPage">
+
+  <nav id="sidebar">
+    <div class="sidebarCustom">
+        <a href="index.html"><img src="img/VBLogo.svg" id="logo"></a>
+      <div>
+        <ul class="list-unstyled components mb-5">
+          <li class="sideNavBtn active">
+            <a href="#">Candidates</a>
+          </li>
+          <li class="sideNavBtn">
+            <a href="#">Measures</a>
+          </li>
+          <li class="sideNavBtn">
+            <a href="#">Quizzes</a>
+          </li>
+        </ul>
+          <img src="img/voterconfidence.png" id="voterConf" width="100%">
+      </div>
+    </div>
+  </nav>
 
 <!-- Page Content  -->
 
-<div id="content" class="p-4 p-md-5 pt-5">
+<div id="content" class="p-5 pt-5">
     <h1 class="pageHeads">Candidates</h1>
 
     <div class="panel-group" id="accordion">
@@ -54,12 +57,12 @@
         <div class="panel panel-default">
             <div class="panel-heading customAccordian">
               <h4 class="panel-title">
-                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                President and Vice President<img src="img/down.svg" style="margin: 5px;"></a>
+                <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                President and Vice President<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
               </h4>
             </div>
             <div id="collapse1" class="panel-collapse collapse in">
-                <div class="panel-body candiHead">
+                <div class="panel-body d-flex flex-lg-row flex-md-row smallMain">
                     <div class="pageCard"><img src="img/kanyewestie.jpg" width="100%"></div>
                     <div class="candiDesc">
                         <div class="candiTopVote">
@@ -71,21 +74,21 @@
                                 <div class="checkBox"></div>
                         </div>
                         </div>
-                        
-                        <div class="d-flex flex-column py-5 px-2" width="100%">
+                        <a href="#" class="contactInfo">Running Mate: Yeezy Kat</a>
+                        <div class="flexColumn infoCard">
                             <a href="#" class="contactInfo"><img src="img/envelope.svg" width="24px" style="margin-right: 10px;">Email: press@WestieYeezy.com</a>
                             <br>
                             <a href="#" class="contactInfo"><img src="img/openweb.svg" width="24px" style="margin-right: 10px;">Website: WestieYeezy.com</a>
                             <div class="d-flex justify-content-around" style="padding: 30px 20px;">
-                                <img src="img/Twittercircle.svg" width="48px">
-                                <img src="img/FBcircle.svg" width="48px">
-                                <img src="img/InstaCircle.svg" width="48px"> 
+                                <img src="img/Twittercircle.svg" class="socialIcons">
+                                <img src="img/FBcircle.svg" class="socialIcons">
+                                <img src="img/InstaCircle.svg" class="socialIcons"> 
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Kanye Westie Priorities -->
-                <div class="d-flex flex-row justify-content-between">
+                <div class="d-flex flex-lg-row flex-md-row smallMain justify-content-between align-items-stretch">
                     <div class="card priorities">
                         <p>“I will boost working betches by building on 
                             Dogmacare with a public option, cracking down on employers who 
@@ -113,75 +116,91 @@
                     <div class="panel panel-default">
                       <div class="panel-heading purpCollapse">
                         <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                          Issues<img src="img/down.svg" style="margin: 5px;"></a>
+                          <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                          Issues<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
                         </h4>
                       </div>
-                      <div id="collapse2" class="panel-collapse collapse in">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.</div>
+                      <div id="collapse2" class="panel-collapse collapse in whiteBack">
+                        <div class="panel-body text-center">
+                          <img src="img/IssuesDrop.png" class="displaySMNone">
+                          <img src="img/IssuesMobile.png" class="d-md-none d-lg-none">
+                        </div>
                       </div>
                     </div>
         
                     <div class="panel panel-default">
                       <div class="panel-heading purpCollapse">
                         <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                            Experience<img src="img/down.svg" style="margin: 5px;"></a>
+                          <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            Experience<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
                         </h4>
                       </div>
-                      <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.</div>
+                      <div id="collapse3" class="panel-collapse collapse whiteBack">
+                        <div class="panel-body"><ul>
+                          <li>President of the United States of America -- Elected position (2016-present)</li>
+                          <li>U.S. Senator -- Elected position (2010-2016)</li>
+                          <li>Mayor, New Yorkie --  Elected position (2002-2010)</li>
+                        </ul>
+</div>
                       </div>
                     </div>
         
                     <div class="panel panel-default">
                       <div class="panel-heading purpCollapse">
                         <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
-                            Education<img src="img/down.svg" style="margin: 5px;"></a>
+                          <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            Education<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
                         </h4>
                       </div>
-                      <div id="collapse4" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.</div>
+                      <div id="collapse4" class="panel-collapse collapse whiteBack">
+                        <div class="panel-body"> <ul>
+                          <li>Pawvard University, College of Law -- Intellectual Pawperty Law (2000)</li>
+                          <li>UC Santa Cruz -- Marine Biology (1996-2000)</li>
+                        </ul>
+</div>
                       </div>
                     </div>
         
                     <div class="panel panel-default">
                         <div class="panel-heading purpCollapse">
                           <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                            Endorsements<img src="img/down.svg" style="margin: 5px;"></a>
+                            <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                            Endorsements<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
                           </h4>
                         </div>
-                        <div id="collapse5" class="panel-collapse collapse in">
-                          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat.</div>
+                        <div id="collapse5" class="panel-collapse collapse in whiteBack">
+                          <div class="panel-body"><ul>
+                            <li>Democratic Party of Dogifornia</li>
+                            <li>Woofs-A-Lot Tribune</li>
+                            <li>Dogifornia League of Moderate Voters</li>
+                            <li>San Frisbee Chronicle</li>
+                            <li>The New Yorkie Times</li>
+                            </ul>
+                            <br>
+                            <button>
+                            <a href="https://en.wikipedia.org/wiki/List_of_Joe_Biden_2020_presidential_campaign_endorsements" class="yellowBtn">Wikipedia Article</a>
+                            </button>
+                          </div>
                         </div>
                       </div>
         
                       <div class="panel panel-default">
                         <div class="panel-heading purpCollapse">
                           <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
-                            Contributions<img src="img/down.svg" style="margin: 5px;"></a>
+                            <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                            Contributions<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
                           </h4>
                         </div>
-                        <div id="collapse6" class="panel-collapse collapse in">
-                          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat.</div>
+                        <div id="collapse6" class="panel-collapse collapse in whiteBack">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              <img src="img/Contributions.png" class="displaySMNone">
+                              <img src="img/ContributionsMobile.png" class="d-lg-none d-md-none">
+                            </div>
+                            <button>
+                              <a href="https://www.fec.gov/data/" class="yellowBtn" style="right: 0;">View More</a>
+                          </button>
+                        </div>
                         </div>
                       </div>
                   </div>
@@ -193,15 +212,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading customAccordian">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
-                    Federal Candidates<img src="img/down.svg" style="margin: 5px;"></a>
+                    <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                    Federal Candidates<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
                   </h4>
                 </div>
                 <div id="collapse7" class="panel-collapse collapse in">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.</div>
+                  <div class="panel-body">.....</div>
                 </div>
               </div>
         
@@ -209,15 +225,12 @@
             <div class="panel panel-default">
                 <div class="panel-heading customAccordian">
                   <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
-                    State Candidates<img src="img/down.svg" style="margin: 5px;"></a>
+                    <a class="collapseBtn" data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                    State Candidates<img src="img/down.svg" class="dropArrow" style="margin: 5px;"></a>
                   </h4>
                 </div>
                 <div id="collapse8" class="panel-collapse collapse in">
-                  <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.</div>
+                  <div class="panel-body">.....</div>
                 </div>
               </div>
 

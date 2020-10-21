@@ -8,11 +8,35 @@
   font-family: 'Nunito Sans', sans-serif;
   color: #ffffff !important;
   background-color: #050505 !important;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  background-color: transparent;
+  padding: 0;
+  border-color: transparent;
+}
+button a:hover{
+  text-decoration: none;
 }
 
 .content{
   overflow: hidden;
   height: 100%;
+}
+
+.fullPage{
+  display: flex;
+  align-items: stretch;
+}
+
+.navbar-togger-icon{
+  display: none;
+}
+
+.navbar-collapse{
+  flex-basis: 0%;
 }
 
 p{
@@ -21,6 +45,7 @@ p{
 
 img{
   line-height: 0px;
+  padding: 0px;
 }
 
 .evrythng{
@@ -60,8 +85,6 @@ p{
   padding: 0 !important;
 }
 
-
-
 .floatRight{
   float: right;
 }
@@ -90,19 +113,16 @@ p{
 }
 
 .navback{
-  background-image: url(/img/bannerbackground.png);
+  background-image: url(../img/bannerbackground.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-
-
 .container{
   display: flex;
+  padding: 40px 24px;
 }
-
-
 
 .nav-link{
   color: white !important;
@@ -122,7 +142,6 @@ p{
   color: #363636;
 }
 
-
 .banner{
   width: 100%;
   height: 40px;
@@ -136,6 +155,15 @@ p{
 
 .navbar-nav li{
   font-size: 20px;
+}
+
+.sidebarCustom{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+button .navbar-toggler{
+  display: none;
 }
 
 /* Hero */
@@ -165,18 +193,22 @@ p{
   font-size: 24px;
   font-weight: 200;
   text-align: left;
+  margin-bottom: 32px;
 }
 
-.startBtn{
+.font24{
+  font-size: 24px;
+}
+
+.yellowBtn{
   padding: 15px 50px;
   background-color: #FFEEBB;
   border-radius: 0;
   border: none;
   color: #0C0C0C;
-  font-size: 20px;
 }
 
-.startBtn:hover{
+.yellowBtn:hover{
   background-color: #FFCD36;
   color: #363636;
 }
@@ -194,7 +226,6 @@ p{
 .heroContainer{
   display: flex;
   flex-direction: row;
-
 }
 
 .masthead-content {
@@ -217,7 +248,7 @@ p{
 .card-title {
   color: #ffffff;
   text-decoration: underline !important;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .card-text{
@@ -230,6 +261,30 @@ p{
 }
 
 
+/* Who We Are cards */
+
+.whoWeAre{
+  margin: 24px 40px;
+}
+
+.whoWeAre .card-title{
+  font-size: 18px;
+  color: #FFEEBB;
+  font-weight: 400;
+  text-decoration: none !important;
+  margin-bottom: 0;
+}
+
+.whoWeAre .card-text{
+  font-size: 16px;
+  color: #BEA7FF;
+  font-weight: 200;
+}
+
+.whoWeAre .card-img-top{
+   padding-bottom: 8px;
+}
+
 /* Footer */
 .bg-black {
   background-color: #000 !important;
@@ -237,8 +292,9 @@ p{
 
 /* Candidates Page */
 
+/* nav */
 #sidebar{
-  width: 26%;
+  width: 25%;
 }
 
 .sideNavBtn{
@@ -252,26 +308,35 @@ p{
   color: #ffffff;
 }
 
+#logo{
+  margin: 40px 0px;
+}
+
+/* end nav */
+
 .active{
   background-color: #434180;
 }
 
-.candiHead{
-  display: flex;
+#content{
+  width: 75%;
 }
 
 .pageHeads{
   font-size: 40px;
   color: #E0E0E0;
-  margin: 60px 0px 30px 0px;
+  margin: 64px 0px 24px 0px;
 }
 
 .pageCard{
+  width: 40%;
+  margin-right: 30px;
+}
+
+.pageCard img{
   background-color: #ffffff;
   padding: 20px;
   border-radius: 20px;
-  width: 40%;
-  margin-right: 30px;
 }
 
 .candiDesc{
@@ -279,6 +344,25 @@ p{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.infoCard{
+  padding: 24px 0px;
+  width: 100%;
+}
+
+.socialIcons{
+  width: 48px;
+}
+
+.flexColumn{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
 }
 
 .contactInfo{
@@ -300,13 +384,13 @@ p{
   color: #E0E0E0;
 }
 
-/* .dropArrow{
+.dropArrow{
   transition: 0.5s;
 }
 
 .flip{
   transform: rotate(-180deg);
-} */
+}
 
 .candiTopVote{
   width: 100%;
@@ -361,10 +445,11 @@ p{
 
 .priorities{
   height: 100%;
-  padding: 10px;
+  padding: 16px;
   margin: 50px 20px;
   border: 1px solid #E0E0E0;
   border-radius: 0;
+  align-self: stretch;
 }
 
 
@@ -384,26 +469,70 @@ p{
   color: #E0E0E0;
 }
 
+.whiteBack{
+  background-color: #ffffff;
+  color: #363636;
+  padding: 24px 32px;
+}
+
+.whiteBack img{
+  max-width: 100%;
+}
+
+.whiteBack .panel-body .text-center{
+  margin-bottom: 40px;
+}
+
+
 @media (max-width: 1023px) {
+  .fullPage{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    width: 100vw;
+  }
+  #logo{
+    margin: 10px 0px;
+  }
+  .container{
+    /* margin-left: 0px !important; */
+    max-width: 100%;
+  }
+  #content{
+    width: 100%;
+  }
+  /* home Page */
+
+  .heroContainer{
+    padding: 0px 40px;
+  }
   header.masthead {
     padding-top: calc(10rem + 55px);
-    padding-bottom: 10rem;
+    padding-bottom: 40px;
   }
   .heroLogo{
     width: 200px;
     padding-top: 50px;
   }
+
   .homeHeroTxt p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
   }
+  .homeHeroTxt a{
+    font-size: 16px;
+  }
+  .homeHeroTxt .yellowBtn{
+    padding: 16px 32px;
+  }
+
   .homeHero{
     width: 90%;
   }
 
   .homeHero img{
     width: 100%;
-
   }
 
   .masthead-content {
@@ -444,9 +573,51 @@ p{
     padding-top: 150px;
   }
 
+
+  /* Candidates */
+
+  /* nav bar */
+  .sidebarCustom{
+    display: flex;
+    flex-flow: row !important;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  #sidebar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+  }
+.sidebarCustom li{
+  display: inline;
+}
+  .sidebarCustom #voterConf{
+    display: none;
+  }
+  .sideNavBtn{
+    width: none;
+    padding: 16px 24px;
+    text-align: center;
+    margin-top: 160px;
+    margin-left: 1px;
+  }
+  .list-unstyled{
+   display: inline;
+  }
+
+  /* end nav */
+  
+  .pageHeads{
+    margin: 0px;
+  }
 }
 
 @media (max-width: 750px) {
+
+  /* home page */
   .heroContainer{
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -455,10 +626,50 @@ p{
   }
   .masthead {
     padding-top: calc(10rem + 20px);
-    padding-bottom: 10rem;
+    padding-bottom: 40px;
   }
   .homeHeroTxt{
     margin-left: 0;
   }
+  .masthead-content {
+    background-image: url(../img/FlagBackground.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+  }
 
+  .homeHeroTxt{
+    width: 80%;
+  }
+
+
+  /* candidates */
+  /* nav */
+  #sidebar{
+    margin: 0px 20px;
+    max-width: inherit;
+  }
+
+  .displaySMNone{
+    display: none;
+  }
+  .smallMain{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .priorities{
+    margin: 16px 32px;
+  }
+  .pageCard{
+    width: 80%;
+  }
+  .candiDesc{
+    width: 90%;
+    margin-top: 32px;
+  }
+  .socialIcons{
+    width: 16%;
+  }
 }
