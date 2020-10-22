@@ -553,6 +553,10 @@ p{
 
 
 @media (max-width: 1023px) {
+
+  .container{
+    padding: 40px 32px;
+  }
   .fullPage{
     display: flex;
     flex-direction: column;
@@ -666,10 +670,11 @@ p{
     padding: 20px 50px;
   }
   #sidebar{
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     max-width: 100%;
+    margin: 0;
   }
 .sidebarCustom li{
   display: inline;
@@ -766,7 +771,7 @@ p{
     padding: 40px 0px;
   }
  .container{
-    padding: 16px 32px;
+    padding: 40px 32px;
   }
 
   .HIWContent .card{
@@ -805,9 +810,30 @@ p{
   }
   /* candidates */
   /* nav */
+
+  .container{
+    padding: 20px;
+  }
   #sidebar{
-    margin: 0px 20px;
-    max-width: inherit;
+    margin: 0px;
+    padding: 0px 20px;
+    max-width: 100% !important;
+  }
+
+  .sidebarCustom{
+    flex-flow: column !important;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+  }
+  .sidebarCustom .list-unstyled{
+    display: flex;
+    flex-direction: column;
+  }
+  .sideNavBtn{
+  margin: 0px;
+  width: 100%;
+  padding: 16px 72px;
   }
 
   .displaySMNone{
@@ -820,7 +846,7 @@ p{
     width: 100%;
   }
   .priorities{
-    margin: 16px 32px;
+    margin: 0px 0px 16px 0px;
     width: 100%;
   }
   .pageCard{
@@ -832,5 +858,21 @@ p{
   }
   .socialIcons{
     width: 16%;
+  }
+  .purpCollapse{
+    padding: 16px;
+  }
+
+}
+
+@media (max-width: 500px){
+    .candiTopVote{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+  .voteBox{
+    margin-top: 16px;
   }
 }
