@@ -9,8 +9,8 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  color: #ffffff !important;
-  background-color: #050505 !important;
+  /* color: #ffffff !important;
+  background-color: #050505 !important; */
 }
 
 .darkMode{
