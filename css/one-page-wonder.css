@@ -315,7 +315,7 @@ p{
   object-fit: contain;
 }
 .grayBack .sectionHeaders{
-  width: 100%;
+  width: 90%;
 }
 
 /* Who We Are cards */
@@ -707,6 +707,8 @@ p{
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
+    padding: 0px 10px !important;
   }
   /* home page */
   .heroContainer{
@@ -758,10 +760,9 @@ p{
     background-position: center top;
     background-size: 100%;
   }
-.sectionHeaders h1{
-  font-size: 24px;
-
-}
+  .sectionHeaders h1{
+    font-size: 24px;
+    }
 
   .arrow img{
     transform: rotate(90deg);
