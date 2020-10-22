@@ -623,7 +623,7 @@ p{
     font-size: 16px;
   }
   .homeHeroTxt .yellowBtn{
-    padding: 16px 32px;
+    padding: 16px 24px;
     font-size: 24px;
   }
 
@@ -862,7 +862,9 @@ p{
   .purpCollapse{
     padding: 16px;
   }
-
+  .whiteBack{
+    padding: 16px 24px;
+  }
 }
 
 @media (max-width: 500px){
