@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  color: #ffffff !important;
+  background-color: #050505 !important;
 }
 
 .darkMode{
@@ -16,10 +18,10 @@
   background-color: #050505 !important;
 }
 
-.lightMode{
+/* .lightMode{
   color: #ffffff !important;
   background-color: #E0E0E0 !important;
-}
+} */
 
 button{
   background-color: transparent;
@@ -208,7 +210,7 @@ p{
 
 .sidebarCustom{
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
 }
 
 
@@ -618,7 +620,6 @@ p{
   .navbar-custom-light .container{
     padding: 16px 24px;
   }
-}
 .navbar-custom-dark .container{
   padding: 16px 24px;
 }
@@ -719,7 +720,7 @@ p{
   /* nav bar */
   .sidebarCustom{
     display: flex;
-    flex-flow: row !important;
+    flex-flow: row;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -755,7 +756,7 @@ p{
     margin: 0px;
   }
   
-
+}
 @media (max-width: 750px) {
 
   .smallColumn{
