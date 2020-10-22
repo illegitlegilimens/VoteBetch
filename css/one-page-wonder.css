@@ -603,6 +603,12 @@ p{
   margin-bottom: 40px;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 32px 40px 32px;
+    max-width: 100%;
+  }
+}
 
 @media (max-width: 1023px) {
 
