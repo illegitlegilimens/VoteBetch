@@ -10,6 +10,7 @@
   background-color: #050505 !important;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 button{
@@ -35,9 +36,9 @@ button a:hover{
   display: none;
 }
 
-.navbar-collapse{
+/* .navbar-collapse{
   flex-basis: 0%;
-}
+} */
 
 p{
   margin: 0;
@@ -108,7 +109,7 @@ p{
   font-size: 16px;
   font-weight: 600;
   color: #ffffff !important;
-  padding: 1rem;
+  padding: 0px;
   background-color: #0C0C0C;
 }
 
@@ -118,17 +119,37 @@ p{
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.container{
-  display: flex;
-  padding: 40px 24px;
+.homeDropUL{
+  padding: 0px;
+}
+.navBtn{
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.navBtn:hover{
+  color: #8581FF;
 }
 
 .nav-link{
-  color: white !important;
+  border: red solid 1px;
+}
+.noBack{
+  padding: 15px 40px;
+  background-color: transparent;
+  color: #E0E0E0;
+  border-color: transparent;
 }
 
-#signUPBtn{
+.container{
+  display: flex;
+  padding: 16px;
+}
+.nav-link{
+  color: white !important;
+}
+.signUPBtn{
   background-color: #FFEEBB;
   padding: 10px 30px;
   color: #0C0C0C;
@@ -136,8 +157,7 @@ p{
   border: none;
   border-radius: 0px;
 }
-
-#signUPBtn:hover{
+.signUPBtn:hover{
   background-color: #FFCD36;
   color: #363636;
 }
@@ -162,9 +182,11 @@ p{
   flex-flow: column wrap;
 }
 
-button .navbar-toggler{
+
+
+/* button .navbar-toggler{
   display: none;
-}
+} */
 
 /* Hero */
 
@@ -182,11 +204,15 @@ button .navbar-toggler{
 }
 
 .homeHero img{
-  height: 100%;
+  width: 100%;
+}
+
+.heroContainer .flexColumn{
+  width: 50%;
 }
 
 .heroLogo{
-  width: 400px;
+  width: 80%;
 }
 
 .homeHeroTxt p{
@@ -214,18 +240,25 @@ button .navbar-toggler{
 }
 
 .homeHeroTxt{
-  width: 50%;
-  margin-left: 75px;
+  width: 100%;
+  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   
+}
+
+#mobileAdHero{
+  width: 50%;
+  margin-top: 20px;
+  right: 0px;
 }
 
 .heroContainer{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .masthead-content {
@@ -236,9 +269,19 @@ button .navbar-toggler{
 }
 
 /* How it Works Cards */
+.largeRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.grayBack{
+  background-color: #292929;
+  width: 100%;
+}
 
 .card{
   background-color: transparent;
+  border-color: transparent;
 }
 
 .card-img-top{
@@ -259,12 +302,31 @@ button .navbar-toggler{
 .arrow{
   padding-top: 150px;
 }
+.HIWContent{
+  width: 100vw;
+}
 
+.HIWContent .card{
+  width: 50%;
+}
+.HIWContent .card-img-top{
+  width: auto;
+  height: 50%;
+  object-fit: contain;
+}
+.grayBack .sectionHeaders{
+  width: 100%;
+}
 
 /* Who We Are cards */
 
-.whoWeAre{
+.whoWeAre .card{
   margin: 24px 40px;
+}
+
+.whoWeAre{
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .whoWeAre .card-title{
@@ -364,6 +426,12 @@ button .navbar-toggler{
   display: flex;
   flex-direction: row;
 }
+
+.flexJustifyContentCenter{
+  justify-content: center;
+}
+
+.flexAlignItemsCenter
 
 .contactInfo{
   color: #E0E0E0;
@@ -492,6 +560,9 @@ button .navbar-toggler{
     margin: 0px;
     width: 100vw;
   }
+  .navbar-custom .container{
+    padding: 16px 24px;
+  }
   #logo{
     margin: 10px 0px;
   }
@@ -503,6 +574,23 @@ button .navbar-toggler{
     width: 100%;
   }
   /* home Page */
+  
+  /* home nav */
+  .signUPBtn{
+  margin: 0px;
+  }
+  .nav-link{
+    width: 118px;
+    text-align: center;
+  }
+  .navbar-nav{
+  text-align: right;
+  }
+  .HIWContent .card-img-top{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 
   .heroContainer{
     padding: 0px 40px;
@@ -512,12 +600,19 @@ button .navbar-toggler{
     padding-bottom: 40px;
   }
   .heroLogo{
-    width: 200px;
+    width: 70%;
     padding-top: 50px;
   }
 
+  /* .heroContainer .flexColumn{
+    width: 50%;
+  } */
+  .homeHeroTxt{
+    margin: 0px 20px;
+  }
+
   .homeHeroTxt p{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 300;
   }
   .homeHeroTxt a{
@@ -525,10 +620,11 @@ button .navbar-toggler{
   }
   .homeHeroTxt .yellowBtn{
     padding: 16px 32px;
+    font-size: 24px;
   }
 
   .homeHero{
-    width: 90%;
+    width: 50%;
   }
 
   .homeHero img{
@@ -538,22 +634,6 @@ button .navbar-toggler{
   .masthead-content {
     background-position: 10px;
     background-size: 100%;
-  }
-
-  .hiwcard{
-    width: 200px;
-    background-color: #050505;
-    margin: 10px 25px 200px 25px;
-  }
-  
-  .hiwcard .card-img-top{
-    padding-bottom: 40px;
-  }
-  
-  .hiwcard.card-title {
-    color: #ffffff;
-    text-decoration: underline !important;
-    font-size: 20px;
   }
   
   .startBtn{
@@ -617,19 +697,55 @@ button .navbar-toggler{
 
 @media (max-width: 750px) {
 
+  .smallColumn{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
   /* home page */
   .heroContainer{
     flex-direction: column;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
+    width: 90%;
   }
+ 
   .masthead {
     padding-top: calc(10rem + 20px);
     padding-bottom: 40px;
   }
   .homeHeroTxt{
     margin-left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeHeroTxt p{
+    font-size: 32px;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+
+  .homeHeroTxt-Container{
+    width: 100% !important;
+  }
+
+  .homeHeroTxt .yellowBtn{
+    font-size: 24px;
+  }
+  #mobileAdHero{
+    width: 80%;
+  }
+  .homeHeroTxt-Container{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  .homeHero{
+    width: 80%;
   }
   .masthead-content {
     background-image: url(../img/FlagBackground.png);
@@ -637,12 +753,56 @@ button .navbar-toggler{
     background-position: center top;
     background-size: 100%;
   }
+.sectionHeaders h1{
+  font-size: 24px;
 
-  .homeHeroTxt{
-    width: 80%;
+}
+
+  .arrow img{
+    transform: rotate(90deg);
+    height: 80px;
+  }
+  .arrow{
+    padding: 40px 0px;
+  }
+ .container{
+    padding: 16px 32px;
   }
 
+  .HIWContent .card{
+    max-width: 90%;
+  }
 
+  .whoWeAre .card{
+    margin: 0px 0px 24px 0px;
+    width: 60%;
+  }
+  
+  .whoWeAre{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .whoWeAre .card-title{
+    font-size: 24px;
+    color: #FFEEBB;
+    font-weight: 400;
+    text-decoration: none !important;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  
+  .whoWeAre .card-text{
+    font-size: 20px;
+    color: #BEA7FF;
+    font-weight: 200;
+  }
+  
+  .whoWeAre .card-img-top{
+     padding-bottom: 8px;
+  }
   /* candidates */
   /* nav */
   #sidebar{
@@ -661,6 +821,7 @@ button .navbar-toggler{
   }
   .priorities{
     margin: 16px 32px;
+    width: 100%;
   }
   .pageCard{
     width: 80%;
