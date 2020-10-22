@@ -6,11 +6,19 @@
 
  body {
   font-family: 'Nunito Sans', sans-serif;
-  color: #ffffff !important;
-  background-color: #050505 !important;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+.darkMode{
+  color: #ffffff !important;
+  background-color: #050505 !important;
+}
+
+.lightMode{
+  color: #ffffff !important;
+  background-color: #E0E0E0 !important;
 }
 
 button{
@@ -35,10 +43,6 @@ button a:hover{
 .navbar-togger-icon{
   display: none;
 }
-
-/* .navbar-collapse{
-  flex-basis: 0%;
-} */
 
 p{
   margin: 0;
@@ -97,7 +101,7 @@ p{
 
 .purpBtn{
   background-color: #5D6CEC;
-  border-radius: 5px;
+  border-radius: 3px;
   color: #E0E0E0;
   padding: 10px 24px;
   margin: 0px 10px;
@@ -112,9 +116,8 @@ p{
   padding: 0px;
   background-color: #0C0C0C;
 }
-
 .navback{
-  background-image: url(../img/bannerbackground.png);
+  background-image: url(../img/flagbackground.svg);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -132,19 +135,32 @@ p{
   color: #8581FF;
 }
 
+.lightBtn{
+  width: auto;
+  max-height: 72px;
+  padding-left: 24px;
+}
+.darkBtn{
+  width: auto;
+  max-height: 72px;
+  padding-left: 24px;
+}
+.navbar .container{
+  padding: 16px 24px;
+}
 .nav-link{
   border: red solid 1px;
 }
 .noBack{
   padding: 15px 40px;
   background-color: transparent;
-  color: #E0E0E0;
+  color: #f0f0f0;
   border-color: transparent;
 }
-
 .container{
   display: flex;
   padding: 16px;
+  max-width: 1200px;
 }
 .nav-link{
   color: white !important;
@@ -162,7 +178,7 @@ p{
   color: #363636;
 }
 
-.banner{
+.banner-dark{
   width: 100%;
   height: 40px;
   background-color: #434180 !important;
@@ -171,6 +187,19 @@ p{
   overflow: hidden;
   text-align: center;
   padding-top: 8px;
+  color: #ffffff;
+}
+
+.banner-light{
+  width: 100%;
+  height: 40px;
+  background-color: #BEA7FF !important;
+  position: sticky;
+  top: 80px !important;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 8px;
+  color: #ffffff;
 }
 
 .navbar-nav li{
@@ -195,8 +224,13 @@ p{
   overflow: hidden;
   padding-top: 200px;
   padding-bottom: 7rem;
-  background: #050505;  
   top: 0px;
+}
+.masthead-dark{
+  background-color: #050505;  
+}
+.masthead-light{
+  background-color: #f8f8f8;
 }
 
 .homeHero{
@@ -214,7 +248,9 @@ p{
 .heroLogo{
   width: 80%;
 }
-
+.homeHeroTxt-light{
+  background-color: #D9D9D9;
+}
 .homeHeroTxt p{
   font-size: 24px;
   font-weight: 200;
@@ -225,6 +261,7 @@ p{
 .font24{
   font-size: 24px;
 }
+
 
 .yellowBtn{
   padding: 15px 50px;
@@ -246,8 +283,9 @@ p{
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  
 }
+
+
 
 #mobileAdHero{
   width: 50%;
@@ -261,11 +299,20 @@ p{
   align-items: center;
 }
 
-.masthead-content {
+/* .masthead-content-dark {
   background-image: url(../img/FlagBackground.png);
   background-repeat: no-repeat;
-  background-position: 200px;
+  background-position-y: 100px;
+  background-position-x: 100px;
+  background-size: 80%;
+} */
+.masthead-content-light {
+  background-image: url(../img/flagbackground.svg);
+  background-repeat: no-repeat;
+  background-position-y: 80px;
+  background-position-x: 140px;
   background-size: 60%;
+  background-color: transparent;
 }
 
 /* How it Works Cards */
@@ -568,9 +615,13 @@ p{
     margin: 0px;
     width: 100vw;
   }
-  .navbar-custom .container{
+  .navbar-custom-light .container{
     padding: 16px 24px;
   }
+}
+.navbar-custom-dark .container{
+  padding: 16px 24px;
+}
   #logo{
     margin: 10px 0px;
   }
@@ -605,7 +656,6 @@ p{
   }
   .heroLogo{
     width: 70%;
-    padding-top: 50px;
   }
 
   /* .heroContainer .flexColumn{
@@ -613,11 +663,12 @@ p{
   } */
   .homeHeroTxt{
     margin: 0px 20px;
+    padding: 24px;
   }
 
   .homeHeroTxt p{
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 600;
   }
   .homeHeroTxt a{
     font-size: 16px;
@@ -626,6 +677,11 @@ p{
     padding: 16px 24px;
     font-size: 24px;
   }
+  .light{
+    color: #363636;
+    font-weight: 800;
+  }
+  
 
   .homeHero{
     width: 50%;
@@ -676,9 +732,9 @@ p{
     max-width: 100%;
     margin: 0;
   }
-.sidebarCustom li{
-  display: inline;
-}
+  .sidebarCustom li{
+    display: inline;
+  }
   .sidebarCustom #voterConf{
     display: none;
   }
@@ -698,7 +754,7 @@ p{
   .pageHeads{
     margin: 0px;
   }
-}
+  
 
 @media (max-width: 750px) {
 
