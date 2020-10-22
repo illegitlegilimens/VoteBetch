@@ -278,6 +278,9 @@ p{
   background-color: #292929;
   width: 100%;
 }
+.grayBack .container{
+  padding-bottom: 64px !important;
+}
 
 .card{
   background-color: transparent;
@@ -556,6 +559,7 @@ p{
 
   .container{
     padding: 40px 32px;
+    max-width: 100%;
   }
   .fullPage{
     display: flex;
@@ -569,10 +573,6 @@ p{
   }
   #logo{
     margin: 10px 0px;
-  }
-  .container{
-    /* margin-left: 0px !important; */
-    max-width: 100%;
   }
   #content{
     width: 100%;
@@ -760,6 +760,9 @@ p{
     background-position: center top;
     background-size: 100%;
   }
+  .sectionHeaders{
+    padding-top: 40px;
+  }
   .sectionHeaders h1{
     font-size: 24px;
     }
@@ -771,9 +774,9 @@ p{
   .arrow{
     padding: 40px 0px;
   }
- .container{
-    padding: 40px 32px;
-  }
+.grayBack .container{
+  padding: 24px 40px;
+}
 
   .HIWContent .card{
     max-width: 90%;
@@ -812,9 +815,6 @@ p{
   /* candidates */
   /* nav */
 
-  .container{
-    padding: 20px;
-  }
   #sidebar{
     margin: 0px;
     padding: 0px 20px;
