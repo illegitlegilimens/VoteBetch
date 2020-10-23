@@ -889,6 +889,7 @@ p{
   }
   .grayBack .container{
     padding: 24px 40px;
+    object-fit: contain;
   }
   .lightBack .container{
     padding: 24px 40px;
