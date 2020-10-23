@@ -229,7 +229,7 @@ p{
   position: relative;
   overflow: hidden;
   padding-top: 200px;
-  padding-bottom: 7rem;
+  padding-bottom: 0px;
   top: 0px;
 }
 .masthead-dark{
