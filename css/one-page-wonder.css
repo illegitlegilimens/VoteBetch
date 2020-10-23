@@ -12,16 +12,19 @@
   /* color: #ffffff !important;
   background-color: #050505 !important; */
 }
+.darkFont{
+  color: #363636;
+}
 
 .darkMode{
   color: #ffffff !important;
   background-color: #050505 !important;
 }
 
-/* .lightMode{
+.lightMode{
   color: #ffffff !important;
-  background-color: #E0E0E0 !important;
-} */
+  background-color: #EAE5FA !important;
+}
 
 button{
   background-color: transparent;
@@ -161,7 +164,7 @@ p{
 }
 .container{
   display: flex;
-  padding: 16px;
+  /* padding: 16px; */
   max-width: 1200px;
 }
 .nav-link{
@@ -250,6 +253,9 @@ p{
 .heroLogo{
   width: 80%;
 }
+.homeHeroTxt{
+  padding: 24px;
+}
 .homeHeroTxt-light{
   background-color: #D9D9D9;
 }
@@ -326,10 +332,16 @@ p{
 .grayBack{
   background-color: #292929;
   width: 100%;
+  padding-top: 64px;
 }
-.grayBack .container{
+.lightBack{
+  background-color: #d4d4d4;
+  width: 100%;
+  padding-top: 64px;
+}
+/* .grayBack .container{
   padding-bottom: 64px !important;
-}
+} */
 
 .card{
   background-color: transparent;
@@ -350,6 +362,13 @@ p{
   font-size: 18px;
   font-weight: 200;
 }
+.HIWContent-light p{
+  color: #363636;
+}
+
+.HIWContent-light .card-text{
+  font-weight: 600 !important;
+}
 
 .arrow{
   padding-top: 150px;
@@ -360,6 +379,7 @@ p{
 
 .HIWContent .card{
   width: 50%;
+  padding-top: 40px;
 }
 .HIWContent .card-img-top{
   width: auto;
@@ -367,7 +387,13 @@ p{
   object-fit: contain;
 }
 .grayBack .sectionHeaders{
-  width: 90%;
+  width: 90% !important;
+}
+.purpBack .sectionHeaders{
+  width: 90% !important;
+}
+.lightBack .sectionHeaders{
+  width: 90% !important;
 }
 
 /* Who We Are cards */
@@ -375,15 +401,20 @@ p{
 .whoWeAre .card{
   margin: 24px 40px;
 }
-
 .whoWeAre{
-  display: flex;
-  flex-flow: row wrap;
+  padding: 64px 0px;
 }
 
 .whoWeAre .card-title{
   font-size: 18px;
   color: #FFEEBB;
+  font-weight: 400;
+  text-decoration: none !important;
+  margin-bottom: 0;
+}
+.whoWeAre .card-title-light{
+  font-size: 18px;
+  color: #363636;
   font-weight: 400;
   text-decoration: none !important;
   margin-bottom: 0;
@@ -394,6 +425,12 @@ p{
   color: #BEA7FF;
   font-weight: 200;
 }
+.whoWeAre .card-text-light{
+  font-size: 16px;
+  color: #6b44d6;
+  font-weight: 200;
+}
+
 
 .whoWeAre .card-img-top{
    padding-bottom: 8px;
@@ -584,7 +621,19 @@ p{
   margin: 0px 0px 1px 0px;
   padding: 10px 60px;
 }
+.purpBack{
+  background-color: #EAE5FA;
+  width: 100%;
+  padding-top: 64px;
+}
+.purpBack {
 
+}
+.purpBack .container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .purpCollapse a{
   color: #E0E0E0;
 }
@@ -655,7 +704,7 @@ p{
   }
 
   .heroContainer{
-    padding: 0px 40px;
+    padding: 0px 40px !important;
   }
   header.masthead {
     padding-top: calc(10rem + 55px);
@@ -838,10 +887,12 @@ p{
   .arrow{
     padding: 40px 0px;
   }
-.grayBack .container{
-  padding: 24px 40px;
-}
-
+  .grayBack .container{
+    padding: 24px 40px;
+  }
+  .lightBack .container{
+    padding: 24px 40px;
+  }
   .HIWContent .card{
     max-width: 90%;
   }

@@ -1,4 +1,4 @@
-# Vote Betch
+# Vote Betch: An LGBTQ inspired voting assistant
 ### Group 3 Contributors
 * Kiri Rasmussen
 * Russell Diaz
