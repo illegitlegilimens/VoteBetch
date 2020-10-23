@@ -14,6 +14,7 @@
 }
 .darkFont{
   color: #363636;
+  font-weight: 600 !important;
 }
 
 .darkMode{
@@ -258,6 +259,7 @@ p{
 }
 .homeHeroTxt-light{
   background-color: #D9D9D9;
+  font-weight: 600 !important;
 }
 .homeHeroTxt p{
   font-size: 24px;
@@ -626,9 +628,7 @@ p{
   width: 100%;
   padding-top: 64px;
 }
-.purpBack {
 
-}
 .purpBack .container{
   display: flex;
   flex-direction: row;
