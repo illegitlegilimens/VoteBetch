@@ -657,12 +657,22 @@ p{
     padding: 24px 32px 40px 32px;
     max-width: 100%;
   }
+
+  .navback{
+    background-size: 100%;
+  }
 }
 
 @media (max-width: 1023px) {
+  .masthead-content-light {
 
+    background-position-y: 0px;
+    background-position-x: 0px;
+    background-size: 100%;
+    background-color: transparent;
+  }
   .container{
-    padding: 40px 32px;
+    padding: 40px 20px;
     max-width: 100%;
   }
   .fullPage{
@@ -703,8 +713,13 @@ p{
     object-fit: contain;
   }
 
+  .HIWContent .card{
+    width: 100%;
+    padding-top: 40px;
+  }
+
   .heroContainer{
-    padding: 0px 40px !important;
+    padding: 0px 20px !important;
   }
   header.masthead {
     padding-top: calc(10rem + 55px);
@@ -812,7 +827,7 @@ p{
   }
   
 }
-@media (max-width: 750px) {
+@media (max-width: 730px) {
 
   .smallColumn{
     display: flex;
@@ -828,7 +843,8 @@ p{
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    padding: 0px;
   }
  
   .masthead {
@@ -842,7 +858,7 @@ p{
     justify-content: center;
   }
   .homeHeroTxt p{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 200;
     text-align: left;
     margin-bottom: 32px;
@@ -888,19 +904,19 @@ p{
     padding: 40px 0px;
   }
   .grayBack .container{
-    padding: 24px 40px;
+    padding: 24px 20px;
     object-fit: contain;
   }
   .lightBack .container{
-    padding: 24px 40px;
+    padding: 24px 20px;
   }
   .HIWContent .card{
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .whoWeAre .card{
     margin: 0px 0px 24px 0px;
-    width: 60%;
+    width: 100%;
   }
   
   .whoWeAre{
